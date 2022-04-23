@@ -21,8 +21,6 @@ def calc_On(n, d_nums):
     return sum([x for x in range(1, n) if 0 in [x % y for y in d_nums]])
 
 # Optimized solution
-
-
 def calc_O1(n, d_nums, lcms):
     # d = numbers to find divisibility from range, lcm = least common multiple of numbers d, n = number range
     # Sum = for each d: d*(n/d)*(1+(n/d)) - for each lcm: lcm*(n/lcm)*(1+(n/lcm)) /2
